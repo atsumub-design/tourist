@@ -1,3 +1,4 @@
+import Link from "next/link";
 export default function Cabongaoan() {
   return (
     <main className="destination-detail">
@@ -217,15 +218,15 @@ export default function Cabongaoan() {
       <header className="detail-header">
         <nav className="detail-nav">
 
-          <a href="/" className="detail-logo">
+          <Link href="/" className="detail-logo">
             Pangasinan Heritage
-          </a>
+          </Link>
 
           <div className="detail-links">
-            <a href="/">Home</a>
-            <a href="/heritage">Heritage</a>
-            <a href="/destinations">Destinations</a>
-            <a href="/faces">Faces</a>
+            <Link href="/">Home</Link>
+            <Link href="/heritage">Heritage</Link>
+            <Link href="/destinations">Destinations</Link>
+            <Link href="/faces">Faces</Link>
           </div>
 
         </nav>
@@ -254,7 +255,7 @@ export default function Cabongaoan() {
         </div>
 
         <img
-          src="/images/cabongaoan.jpg"
+          src="/tourist/images/cabongaoan.jpg"
           alt="Cabongaoan Beach in Pangasinan"
           className="detail-hero-image"
         />
@@ -319,9 +320,9 @@ export default function Cabongaoan() {
           Explore More Destinations
         </h2>
 
-        <a href="/destinations" className="back-button">
+        <Link href="/destinations" className="back-button">
            Back to Destinations
-        </a>
+        </Link>
 
       </section>
 

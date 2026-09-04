@@ -1,3 +1,4 @@
+import Link from "next/link";
 export default function Festival() {
   return (
     <main className="heritage-detail-page">
@@ -334,15 +335,15 @@ export default function Festival() {
       <header className="detail-header">
         <nav className="detail-nav">
 
-          <a href="/" className="detail-logo">
+          <Link href="/" className="detail-logo">
             Pangasinan Heritage
-          </a>
+          </Link>
 
           <div className="detail-links">
-            <a href="/">Home</a>
-            <a href="/heritage">Heritage</a>
-            <a href="/destinations">Destinations</a>
-            <a href="/faces">Faces</a>
+            <Link href="/">Home</Link>
+            <Link href="/heritage">Heritage</Link>
+            <Link href="/destinations">Destinations</Link>
+            <Link href="/faces">Faces</Link>
           </div>
 
         </nav>
@@ -378,7 +379,7 @@ export default function Festival() {
         </div>
 
         <img
-          src="/images/bangusfestival.jpg"
+          src="/tourist/images/bangusfestival.jpg"
           alt="Bangus Festival in Pangasinan"
           className="detail-hero-image"
         />
@@ -422,7 +423,7 @@ export default function Festival() {
           </p>
 
           <img
-            src="/images/bangusfestival.jpg"
+            src="/tourist/images/bangusfestival.jpg"
             alt="Bangus Festival celebration"
             className="festival-image"
           />
@@ -532,7 +533,7 @@ export default function Festival() {
           </p>
 
           <img
-            src="/images/festival.jpg"
+            src="/tourist/images/festival.jpg"
             alt="Pistay Dayat celebration in Pangasinan"
             className="pitay-dayat-image"
           />
@@ -563,12 +564,12 @@ export default function Festival() {
           Continue Exploring Pangasinan Heritage
         </h2>
 
-        <a
+        <Link
           href="/heritage"
           className="back-button"
         >
           Back to Heritage
-        </a>
+        </Link>
 
       </section>
 

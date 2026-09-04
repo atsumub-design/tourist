@@ -1,3 +1,4 @@
+import Link from "next/link";
 export default function FoodMakers() {
   return (
     <main className="destination-detail">
@@ -228,15 +229,15 @@ export default function FoodMakers() {
 
         <nav className="detail-nav">
 
-          <a href="/" className="detail-logo">
+          <Link href="/" className="detail-logo">
             Pangasinan Heritage
-          </a>
+          </Link>
 
           <div className="detail-links">
-            <a href="/">Home</a>
-            <a href="/heritage">Heritage</a>
-            <a href="/destinations">Destinations</a>
-            <a href="/faces">Faces</a>
+            <Link href="/">Home</Link>
+            <Link href="/heritage">Heritage</Link>
+            <Link href="/destinations">Destinations</Link>
+            <Link href="/faces">Faces</Link>
           </div>
 
         </nav>
@@ -271,7 +272,7 @@ export default function FoodMakers() {
 
 
         <img
-          src="/images/food-makers.jpg"
+          src="/tourist/images/food-makers.jpg"
           alt="Local food makers in Pangasinan"
           className="detail-hero-image"
         />
@@ -373,12 +374,12 @@ export default function FoodMakers() {
           Continue Exploring
         </h2>
 
-        <a
+        <Link
           href="/faces"
           className="back-button"
         >
           Back to Faces
-        </a>
+        </Link>
 
       </section>
 

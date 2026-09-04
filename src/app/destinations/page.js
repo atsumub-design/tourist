@@ -1,3 +1,4 @@
+import Link from "next/link";
 import "./destinations.css";
 
 export default function Destinations() {
@@ -9,10 +10,10 @@ export default function Destinations() {
           <h2>Pangasinan Heritage</h2>
 
           <div className="nav-links">
-            <a href="/">Home</a>
-            <a href="/heritage">Heritage</a>
-            <a href="/destinations">Destinations</a>
-            <a href="/faces">Faces</a>
+            <Link href="/">Home</Link>
+            <Link href="/heritage">Heritage</Link>
+            <Link href="/destinations">Destinations</Link>
+            <Link href="/faces">Faces</Link>
           </div>
         </nav>
       </header>
@@ -40,7 +41,7 @@ export default function Destinations() {
           <article className="destination-card">
             <div className="destination-image">
               <img
-                src="/images/hundred-island.jpg"
+                src="/tourist/images/hundred-island.jpg"
                 alt="Hundred Islands in Alaminos, Pangasinan"
               />
             </div>
@@ -58,12 +59,12 @@ export default function Destinations() {
                 clear waters, and breathtaking coastal scenery.
               </p>
 
-              <a
+              <Link
                 href="/destinations/hundred-islands"
                 className="destination-button"
               >
                 Explore Hundred Islands
-              </a>
+              </Link>
             </div>
           </article>
 
@@ -71,7 +72,7 @@ export default function Destinations() {
           <article className="destination-card">
             <div className="destination-image">
               <img
-                src="/images/bolinao.jpg"
+                src="/tourist/images/bolinao.jpg"
                 alt="Bolinao, Pangasinan"
               />
             </div>
@@ -89,12 +90,12 @@ export default function Destinations() {
                 and historic lighthouse.
               </p>
 
-              <a
+              <Link
                 href="/destinations/bolinao"
                 className="destination-button"
               >
                 Explore Bolinao
-              </a>
+              </Link>
             </div>
           </article>
 
@@ -102,7 +103,7 @@ export default function Destinations() {
           <article className="destination-card">
             <div className="destination-image">
               <img
-                src="/images/cabongaoan.jpg"
+                src="/tourist/images/cabongaoan.jpg"
                 alt="Cabongaoan Beach in Burgos, Pangasinan"
               />
             </div>
@@ -120,12 +121,12 @@ export default function Destinations() {
                 dramatic rock formations, and natural landscapes.
               </p>
 
-              <a
+              <Link
                 href="/destinations/cabongaoan"
                 className="destination-button"
               >
                 Explore Cabongaoan
-              </a>
+              </Link>
             </div>
           </article>
 
@@ -133,7 +134,7 @@ export default function Destinations() {
           <article className="destination-card">
             <div className="destination-image">
               <img
-                src="/images/patar-beach.jpg"
+                src="/tourist/images/patar-beach.jpg"
                 alt="Patar Beach in Bolinao, Pangasinan"
               />
             </div>
@@ -151,12 +152,12 @@ export default function Destinations() {
                 western coast of Pangasinan.
               </p>
 
-              <a
+              <Link
                 href="/destinations/patar"
                 className="destination-button"
               >
                 Explore Patar Beach
-              </a>
+              </Link>
             </div>
           </article>
 
@@ -164,7 +165,7 @@ export default function Destinations() {
           <article className="destination-card">
             <div className="destination-image">
               <img
-                src="/images/cape-bolinao.jpg"
+                src="/tourist/images/cape-bolinao.jpg"
                 alt="Cape Bolinao Lighthouse in Pangasinan"
               />
             </div>
@@ -182,12 +183,12 @@ export default function Destinations() {
                 surrounding coastline.
               </p>
 
-              <a
+              <Link
                 href="/destinations/cape-bolinao"
                 className="destination-button"
               >
                 Explore Lighthouse
-              </a>
+              </Link>
             </div>
           </article>
 
@@ -195,7 +196,7 @@ export default function Destinations() {
           <article className="destination-card">
             <div className="destination-image">
               <img
-                src="/images/tondol-beach.jpg"
+                src="/tourist/images/tondol-beach.jpg"
                 alt="Tondol Beach in Anda, Pangasinan"
               />
             </div>
@@ -213,12 +214,12 @@ export default function Destinations() {
                 families and visitors.
               </p>
 
-              <a
+              <Link
                 href="/destinations/tondol"
                 className="destination-button"
               >
                 Explore Tondol Beach
-              </a>
+              </Link>
             </div>
           </article>
 
@@ -237,9 +238,9 @@ export default function Destinations() {
           and experiences waiting for you across Pangasinan.
         </p>
 
-        <a href="/" className="cta-button">
+        <Link href="/" className="cta-button">
           Back to Home
-        </a>
+        </Link>
       </section>
 
       <footer>
@@ -253,10 +254,10 @@ export default function Destinations() {
           </p>
 
           <div className="footer-links">
-            <a href="/">Home</a>
-            <a href="/heritage">Heritage</a>
-            <a href="/destinations">Destinations</a>
-            <a href="/faces">Faces</a>
+            <Link href="/">Home</Link>
+            <Link href="/heritage">Heritage</Link>
+            <Link href="/destinations">Destinations</Link>
+            <Link href="/faces">Faces</Link>
           </div>
 
           <p className="copyright">

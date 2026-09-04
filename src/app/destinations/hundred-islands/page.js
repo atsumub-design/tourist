@@ -1,3 +1,4 @@
+import Link from "next/link";
 export default function HundredIslandsPage() {
   return (
     <main className="destination-detail">
@@ -219,15 +220,15 @@ export default function HundredIslandsPage() {
       <header className="detail-header">
         <nav className="detail-nav">
 
-          <a href="/" className="detail-logo">
+          <Link href="/" className="detail-logo">
             Pangasinan Heritage
-          </a>
+          </Link>
 
           <div className="detail-links">
-            <a href="/">Home</a>
-            <a href="/heritage">Heritage</a>
-            <a href="/destinations">Destinations</a>
-            <a href="/faces">Faces</a>
+            <Link href="/">Home</Link>
+            <Link href="/heritage">Heritage</Link>
+            <Link href="/destinations">Destinations</Link>
+            <Link href="/faces">Faces</Link>
           </div>
 
         </nav>
@@ -262,7 +263,7 @@ export default function HundredIslandsPage() {
 
 
         <img
-          src="/images/hundred-island.jpg"
+          src="/tourist/images/hundred-island.jpg"
           alt="Hundred Islands National Park in Alaminos, Pangasinan"
           className="detail-hero-image"
         />
@@ -357,12 +358,12 @@ export default function HundredIslandsPage() {
           Explore More Destinations
         </h2>
 
-        <a
+        <Link
           href="/destinations"
           className="back-button"
         >
           Explore More Destinations
-        </a>
+        </Link>
 
       </section>
 

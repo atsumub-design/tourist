@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
 import L from "leaflet";
@@ -91,12 +92,12 @@ export default function PangasinanMap() {
                   {location.description}
                 </p>
 
-                <a
+                <Link
                   href={location.link}
                   className="map-popup-link"
                 >
                   Discover More →
-                </a>
+                </Link>
 
               </div>
 

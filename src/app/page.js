@@ -1,3 +1,4 @@
+import Link from "next/link";
 import dynamic from "next/dynamic";
 
 const PangasinanMap = dynamic(
@@ -19,10 +20,10 @@ export default function Home() {
           <h2>Pangasinan Heritage</h2>
 
           <div className="nav-links">
-            <a href="/tourist/">Home</a>
-            <a href="/tourist/heritage/">Heritage</a>
-            <a href="/tourist/destinations/">Destinations</a>
-            <a href="/tourist/faces/">Faces</a>
+            <Link href="/">Home</Link>
+            <Link href="/heritage/">Heritage</Link>
+            <Link href="/destinations/">Destinations</Link>
+            <Link href="/faces/">Faces</Link>
           </div>
         </nav>
       </header>
@@ -48,19 +49,19 @@ export default function Home() {
             traditions, and culture that make Pangasinan unique.
           </p>
 
-          <a
-            href="/tourist/destinations/"
+          <Link
+            href="/destinations/"
             className="hero-button"
           >
             Explore Pangasinan
-          </a>
+          </Link>
 
         </div>
 
 
         <div className="hero-image">
           <img
-            src="/images/hero.jpg"
+            src="/tourist/images/hero.jpg"
             alt="Beautiful scenery in Pangasinan"
           />
         </div>
@@ -100,7 +101,7 @@ export default function Home() {
 
             <div className="card-image">
               <img
-                src="/images/hundred-island.jpg"
+                src="/tourist/images/hundred-island.jpg"
                 alt="Hundred Islands in Pangasinan"
               />
             </div>
@@ -120,12 +121,12 @@ export default function Home() {
                 of Alaminos, Pangasinan.
               </p>
 
-              <a
-                href="/tourist/destinations/hundred-islands/"
+              <Link
+                href="/destinations/hundred-islands/"
                 className="card-link"
               >
                 Discover More
-              </a>
+              </Link>
 
             </div>
 
@@ -139,7 +140,7 @@ export default function Home() {
 
             <div className="card-image">
               <img
-                src="/images/bolinao.jpg"
+                src="/tourist/images/bolinao.jpg"
                 alt="Bolinao, Pangasinan"
               />
             </div>
@@ -159,12 +160,12 @@ export default function Home() {
                 coastal heritage of Bolinao.
               </p>
 
-              <a
-                href="/tourist/destinations/bolinao/"
+              <Link
+                href="/destinations/bolinao/"
                 className="card-link"
               >
                 Discover More
-              </a>
+              </Link>
 
             </div>
 
@@ -181,7 +182,7 @@ export default function Home() {
 
             <div className="card-image">
               <img
-                src="/images/heritage.jpg"
+                src="/tourist/images/heritage.jpg"
                 alt="Pangasinan heritage and culture"
               />
             </div>
@@ -201,12 +202,12 @@ export default function Home() {
                 and cultural identity of Pangasinan.
               </p>
 
-              <a
-                href="/tourist/heritage/"
+              <Link
+                href="/heritage/"
                 className="card-link"
               >
                 Discover More
-              </a>
+              </Link>
 
             </div>
 
@@ -258,7 +259,7 @@ export default function Home() {
         <div className="faces-image">
 
           <img
-            src="/images/heritage.jpg"
+            src="/tourist/images/heritage.jpg"
             alt="People and heritage of Pangasinan"
           />
 
@@ -288,12 +289,12 @@ export default function Home() {
             the identity of Pangasinan.
           </p>
 
-          <a
-            href="/tourist/faces/"
+          <Link
+            href="/faces/"
             className="faces-button"
           >
             Discover Their Stories
-          </a>
+          </Link>
 
         </div>
 
@@ -346,21 +347,21 @@ export default function Home() {
 
           <div className="footer-links">
 
-            <a href="/tourist/">
+            <Link href="/">
               Home
-            </a>
+            </Link>
 
-            <a href="/tourist/heritage/">
+            <Link href="/heritage/">
               Heritage
-            </a>
+            </Link>
 
-            <a href="/tourist/destinations/">
+            <Link href="/destinations/">
               Destinations
-            </a>
+            </Link>
 
-            <a href="/tourist/faces/">
+            <Link href="/faces/">
               Faces
-            </a>
+            </Link>
 
           </div>
 

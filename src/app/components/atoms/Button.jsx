@@ -1,7 +1,8 @@
+import Link from "next/link";
 export default function Button({ children, href }) {
   return (
-    <a href={href} className="hero-button">
+    <Link href={href} className="hero-button">
       {children}
-    </a>
+    </Link>
   );
 }

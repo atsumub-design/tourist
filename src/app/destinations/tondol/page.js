@@ -1,3 +1,4 @@
+import Link from "next/link";
 export default function TondolBeach() {
   return (
     <main className="destination-detail">
@@ -216,15 +217,15 @@ export default function TondolBeach() {
 
         <nav className="detail-nav">
 
-          <a href="/" className="detail-logo">
+          <Link href="/" className="detail-logo">
             Pangasinan Heritage
-          </a>
+          </Link>
 
           <div className="detail-links">
-            <a href="/">Home</a>
-            <a href="/heritage">Heritage</a>
-            <a href="/destinations">Destinations</a>
-            <a href="/faces">Faces</a>
+            <Link href="/">Home</Link>
+            <Link href="/heritage">Heritage</Link>
+            <Link href="/destinations">Destinations</Link>
+            <Link href="/faces">Faces</Link>
           </div>
 
         </nav>
@@ -256,7 +257,7 @@ export default function TondolBeach() {
         </div>
 
         <img
-          src="/images/cabongaoan.jpg"
+          src="/tourist/images/cabongaoan.jpg"
           alt="Tondol Beach in Anda, Pangasinan"
           className="detail-hero-image"
         />
@@ -321,9 +322,9 @@ export default function TondolBeach() {
           Explore More Destinations
         </h2>
 
-        <a href="/destinations" className="back-button">
+        <Link href="/destinations" className="back-button">
            Back to Destinations
-        </a>
+        </Link>
 
       </section>
 

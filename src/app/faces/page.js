@@ -1,3 +1,4 @@
+import Link from "next/link";
 import "./faces.css";
 
 export default function Faces() {
@@ -11,15 +12,15 @@ export default function Faces() {
       <header className="faces-header">
         <nav className="faces-nav">
 
-          <a href="/" className="faces-logo">
+          <Link href="/" className="faces-logo">
             Pangasinan Heritage
-          </a>
+          </Link>
 
           <div className="faces-nav-links">
-            <a href="/">Home</a>
-            <a href="/heritage">Heritage</a>
-            <a href="/destinations">Destinations</a>
-            <a href="/faces">Faces</a>
+            <Link href="/">Home</Link>
+            <Link href="/heritage">Heritage</Link>
+            <Link href="/destinations">Destinations</Link>
+            <Link href="/faces">Faces</Link>
           </div>
 
         </nav>
@@ -65,7 +66,7 @@ export default function Faces() {
           <div className="faces-hero-image">
 
             <img
-              src="/images/community.jpg"
+              src="/tourist/images/community.jpg"
               alt="Community members of Pangasinan"
             />
 
@@ -140,7 +141,7 @@ export default function Faces() {
             <div className="person-image">
 
               <img
-                src="/images/farmers.jpg"
+                src="/tourist/images/farmers.jpg"
                 alt="Farmers in Pangasinan"
               />
 
@@ -163,12 +164,12 @@ export default function Faces() {
                 through generations.
               </p>
 
-              <a
+              <Link
                 href="/faces/farmers"
                 className="person-button"
               >
                 Discover Their Story 
-              </a>
+              </Link>
 
             </div>
 
@@ -184,7 +185,7 @@ export default function Faces() {
             <div className="person-image">
 
               <img
-                src="/images/fishermen.jpg"
+                src="/tourist/images/fishermen.jpg"
                 alt="Fishermen in Pangasinan"
               />
 
@@ -206,12 +207,12 @@ export default function Faces() {
                 knowledge and traditions connected to fishing.
               </p>
 
-              <a
+              <Link
                 href="/faces/fishermen"
                 className="person-button"
               >
                 Discover Their Story 
-              </a>
+              </Link>
 
             </div>
 
@@ -227,7 +228,7 @@ export default function Faces() {
             <div className="person-image">
 
               <img
-                src="/images/local-artisan.jpg"
+                src="/tourist/images/local-artisan.jpg"
                 alt="Local artisan in Pangasinan"
               />
 
@@ -249,12 +250,12 @@ export default function Faces() {
                 reflect the cultural character of Pangasinan.
               </p>
 
-              <a
+              <Link
                 href="/faces/artisans"
                 className="person-button"
               >
                 Discover Their Story 
-              </a>
+              </Link>
 
             </div>
 
@@ -270,7 +271,7 @@ export default function Faces() {
             <div className="person-image">
 
               <img
-                src="/images/food-makers.jpg"
+                src="/tourist/images/food-makers.jpg"
                 alt="Local food makers in Pangasinan"
               />
 
@@ -292,12 +293,12 @@ export default function Faces() {
                 and delicacies enjoyed by families and visitors.
               </p>
 
-              <a
+              <Link
                 href="/faces/food"
                 className="person-button"
               >
                 Discover Their Story 
-              </a>
+              </Link>
 
             </div>
 
@@ -313,7 +314,7 @@ export default function Faces() {
             <div className="person-image">
 
               <img
-                src="/images/community.jpg"
+                src="/tourist/images/community.jpg"
                 alt="Community members in Pangasinan"
               />
 
@@ -336,12 +337,12 @@ export default function Faces() {
                 local communities.
               </p>
 
-              <a
+              <Link
                 href="/faces/community"
                 className="person-button"
               >
                 Discover Their Story 
-              </a>
+              </Link>
 
             </div>
 
@@ -357,7 +358,7 @@ export default function Faces() {
             <div className="person-image">
 
               <img
-                src="/images/dinagadia-localartist.jpg"
+                src="/tourist/images/dinagadia-localartist.jpg"
                 alt="Local artist from Pangasinan"
               />
 
@@ -379,12 +380,12 @@ export default function Faces() {
                 arts, and other forms of cultural expression.
               </p>
 
-              <a
+              <Link
                 href="/faces/localartist"
                 className="person-button"
               >
                 Discover Their Story 
-              </a>
+              </Link>
 
             </div>
 
@@ -406,7 +407,7 @@ export default function Faces() {
           <div className="community-image">
 
             <img
-              src="/images/community.jpg"
+              src="/tourist/images/community.jpg"
               alt="People and communities of Pangasinan"
             />
 
@@ -467,12 +468,12 @@ export default function Faces() {
             their history and heritage.
           </p>
 
-          <a
+          <Link
             href="/destinations"
             className="faces-button"
           >
             Explore Destinations
-          </a>
+          </Link>
 
         </div>
 
@@ -498,21 +499,21 @@ export default function Faces() {
 
           <div className="faces-footer-links">
 
-            <a href="/">
+            <Link href="/">
               Home
-            </a>
+            </Link>
 
-            <a href="/heritage">
+            <Link href="/heritage">
               Heritage
-            </a>
+            </Link>
 
-            <a href="/destinations">
+            <Link href="/destinations">
               Destinations
-            </a>
+            </Link>
 
-            <a href="/faces">
+            <Link href="/faces">
               Faces
-            </a>
+            </Link>
 
           </div>
 

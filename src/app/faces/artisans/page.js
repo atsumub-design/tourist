@@ -1,3 +1,4 @@
+import Link from "next/link";
 export default function Artisans() {
   return (
     <main className="destination-detail">
@@ -230,15 +231,15 @@ export default function Artisans() {
 
         <nav className="detail-nav">
 
-          <a href="/" className="detail-logo">
+          <Link href="/" className="detail-logo">
             Pangasinan Heritage
-          </a>
+          </Link>
 
           <div className="detail-links">
-            <a href="/">Home</a>
-            <a href="/heritage">Heritage</a>
-            <a href="/destinations">Destinations</a>
-            <a href="/faces">Faces</a>
+            <Link href="/">Home</Link>
+            <Link href="/heritage">Heritage</Link>
+            <Link href="/destinations">Destinations</Link>
+            <Link href="/faces">Faces</Link>
           </div>
 
         </nav>
@@ -274,7 +275,7 @@ export default function Artisans() {
 
 
         <img
-          src="/images/local-artisan.jpg"
+          src="/tourist/images/local-artisan.jpg"
           alt="Local artisan in Pangasinan"
           className="detail-hero-image"
         />
@@ -379,12 +380,12 @@ export default function Artisans() {
           Continue Exploring
         </h2>
 
-        <a
+        <Link
           href="/faces"
           className="back-button"
         >
           Back to Faces
-        </a>
+        </Link>
 
       </section>
 

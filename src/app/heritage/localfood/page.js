@@ -1,3 +1,4 @@
+import Link from "next/link";
 export default function LocalFood() {
   return (
     <main className="heritage-detail-page">
@@ -282,15 +283,15 @@ export default function LocalFood() {
       <header className="detail-header">
         <nav className="detail-nav">
 
-          <a href="/" className="detail-logo">
+          <Link href="/" className="detail-logo">
             Pangasinan Heritage
-          </a>
+          </Link>
 
           <div className="detail-links">
-            <a href="/">Home</a>
-            <a href="/heritage">Heritage</a>
-            <a href="/destinations">Destinations</a>
-            <a href="/faces">Faces</a>
+            <Link href="/">Home</Link>
+            <Link href="/heritage">Heritage</Link>
+            <Link href="/destinations">Destinations</Link>
+            <Link href="/faces">Faces</Link>
           </div>
 
         </nav>
@@ -321,7 +322,7 @@ export default function LocalFood() {
         </div>
 
         <img
-          src="/images/puto.jpg"
+          src="/tourist/images/puto.jpg"
           alt="Traditional Puto Calasiao"
           className="detail-hero-image"
         />
@@ -388,7 +389,7 @@ export default function LocalFood() {
             <div className="food-card">
 
               <img
-                src="/images/puto.jpg"
+                src="/tourist/images/puto.jpg"
                 alt="Puto Calasiao"
               />
 
@@ -411,7 +412,7 @@ export default function LocalFood() {
             <div className="food-card">
 
               <img
-                src="/images/bangus.jpg"
+                src="/tourist/images/bangus.jpg"
                 alt="Bangus of Pangasinan"
               />
 
@@ -434,7 +435,7 @@ export default function LocalFood() {
             <div className="food-card">
 
               <img
-                src="/images/asin.jpg"
+                src="/tourist/images/asin.jpg"
                 alt="Salt production in Pangasinan"
               />
 
@@ -465,12 +466,12 @@ export default function LocalFood() {
           Continue Exploring Pangasinan Heritage
         </h2>
 
-        <a
+        <Link
           href="/heritage"
           className="back-button"
         >
           Back to Heritage
-        </a>
+        </Link>
 
       </section>
 

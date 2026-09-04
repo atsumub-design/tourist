@@ -29,7 +29,7 @@ export default function Destinations() {
 
           <div className="card-image">
             <img
-              src="/images/hundred-island.jpg"
+              src="/tourist/images/hundred-island.jpg"
               alt="Hundred Islands in Pangasinan"
             />
           </div>
@@ -68,7 +68,7 @@ export default function Destinations() {
 
           <div className="card-image">
             <img
-              src="/images/bolinao.jpg"
+              src="/tourist/images/bolinao.jpg"
               alt="Bolinao, Pangasinan"
             />
           </div>
@@ -110,7 +110,7 @@ export default function Destinations() {
 
           <div className="card-image">
             <img
-              src="/images/heritage.jpg"
+              src="/tourist/images/heritage.jpg"
               alt="Pangasinan heritage and culture"
             />
           </div>

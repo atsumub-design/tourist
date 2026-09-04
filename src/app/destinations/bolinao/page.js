@@ -1,3 +1,4 @@
+import Link from "next/link";
 export default function Bolinao() {
   return (
     <main className="destination-detail">
@@ -218,15 +219,15 @@ export default function Bolinao() {
       <header className="detail-header">
         <nav className="detail-nav">
 
-          <a href="/" className="detail-logo">
+          <Link href="/" className="detail-logo">
             Pangasinan Heritage
-          </a>
+          </Link>
 
           <div className="detail-links">
-            <a href="/">Home</a>
-            <a href="/heritage">Heritage</a>
-            <a href="/destinations">Destinations</a>
-            <a href="/faces">Faces</a>
+            <Link href="/">Home</Link>
+            <Link href="/heritage">Heritage</Link>
+            <Link href="/destinations">Destinations</Link>
+            <Link href="/faces">Faces</Link>
           </div>
 
         </nav>
@@ -253,7 +254,7 @@ export default function Bolinao() {
         </div>
 
         <img
-          src="/images/bolinao.jpg"
+          src="/tourist/images/bolinao.jpg"
           alt="Bolinao, Pangasinan"
           className="detail-hero-image"
         />
@@ -319,9 +320,9 @@ export default function Bolinao() {
           Continue Exploring
         </h2>
 
-        <a href="/destinations" className="back-button">
+        <Link href="/destinations" className="back-button">
            Back to Destinations
-        </a>
+        </Link>
 
       </section>
 

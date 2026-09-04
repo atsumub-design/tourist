@@ -1,3 +1,4 @@
+import Link from "next/link";
 export default function Fishermen() {
   return (
     <main className="destination-detail">
@@ -230,15 +231,15 @@ export default function Fishermen() {
 
         <nav className="detail-nav">
 
-          <a href="/" className="detail-logo">
+          <Link href="/" className="detail-logo">
             Pangasinan Heritage
-          </a>
+          </Link>
 
           <div className="detail-links">
-            <a href="/">Home</a>
-            <a href="/heritage">Heritage</a>
-            <a href="/destinations">Destinations</a>
-            <a href="/faces">Faces</a>
+            <Link href="/">Home</Link>
+            <Link href="/heritage">Heritage</Link>
+            <Link href="/destinations">Destinations</Link>
+            <Link href="/faces">Faces</Link>
           </div>
 
         </nav>
@@ -274,7 +275,7 @@ export default function Fishermen() {
 
 
         <img
-          src="/images/fishermen.jpg"
+          src="/tourist/images/fishermen.jpg"
           alt="Fishermen in Pangasinan"
           className="detail-hero-image"
         />
@@ -371,12 +372,12 @@ export default function Fishermen() {
           Continue Exploring
         </h2>
 
-        <a
+        <Link
           href="/faces"
           className="back-button"
         >
           Back to Faces
-        </a>
+        </Link>
 
       </section>
 

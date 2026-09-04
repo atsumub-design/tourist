@@ -8,7 +8,7 @@ export default function Faces() {
       <div className="faces-image">
 
         <img
-          src="/images/heritage.jpg"
+          src="/tourist/images/heritage.jpg"
           alt="People and heritage of Pangasinan"
         />
 

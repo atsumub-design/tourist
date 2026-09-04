@@ -1,3 +1,4 @@
+import Link from "next/link";
 export default function LocalArtist() {
   return (
     <main className="destination-detail">
@@ -230,27 +231,27 @@ export default function LocalArtist() {
 
         <nav className="detail-nav">
 
-          <a href="/" className="detail-logo">
+          <Link href="/" className="detail-logo">
             Pangasinan Heritage
-          </a>
+          </Link>
 
           <div className="detail-links">
 
-            <a href="/">
+            <Link href="/">
               Home
-            </a>
+            </Link>
 
-            <a href="/heritage">
+            <Link href="/heritage">
               Heritage
-            </a>
+            </Link>
 
-            <a href="/destinations">
+            <Link href="/destinations">
               Destinations
-            </a>
+            </Link>
 
-            <a href="/faces">
+            <Link href="/faces">
               Faces
-            </a>
+            </Link>
 
           </div>
 
@@ -287,7 +288,7 @@ export default function LocalArtist() {
 
 
         <img
-          src="/images/dinagadia-localartist.jpg"
+          src="/tourist/images/dinagadia-localartist.jpg"
           alt="Dina Gadia, local artist"
           className="detail-hero-image"
         />
@@ -399,12 +400,12 @@ export default function LocalArtist() {
           Continue Exploring
         </h2>
 
-        <a
+        <Link
           href="/faces"
           className="back-button"
         >
           Back to Faces
-        </a>
+        </Link>
 
       </section>
 

@@ -1,3 +1,4 @@
+import Link from "next/link";
 export default function CapeBolinao() {
   return (
     <main className="destination-detail">
@@ -216,15 +217,15 @@ export default function CapeBolinao() {
 
         <nav className="detail-nav">
 
-          <a href="/" className="detail-logo">
+          <Link href="/" className="detail-logo">
             Pangasinan Heritage
-          </a>
+          </Link>
 
           <div className="detail-links">
-            <a href="/">Home</a>
-            <a href="/heritage">Heritage</a>
-            <a href="/destinations">Destinations</a>
-            <a href="/faces">Faces</a>
+            <Link href="/">Home</Link>
+            <Link href="/heritage">Heritage</Link>
+            <Link href="/destinations">Destinations</Link>
+            <Link href="/faces">Faces</Link>
           </div>
 
         </nav>
@@ -256,7 +257,7 @@ export default function CapeBolinao() {
         </div>
 
         <img
-          src="/images/cape-bolinao.jpg"
+          src="/tourist/images/cape-bolinao.jpg"
           alt="Cape Bolinao Lighthouse in Pangasinan"
           className="detail-hero-image"
         />
@@ -322,9 +323,9 @@ export default function CapeBolinao() {
           Continue Exploring Pangasinan
         </h2>
 
-        <a href="/destinations" className="back-button">
+        <Link href="/destinations" className="back-button">
            Back to Destinations
-        </a>
+        </Link>
 
       </section>
 

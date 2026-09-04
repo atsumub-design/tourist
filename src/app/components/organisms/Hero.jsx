@@ -28,7 +28,7 @@ export default function Hero() {
 
       <div className="hero-image">
         <img
-          src="/images/hero.jpg"
+          src="/tourist/images/hero.jpg"
           alt="Beautiful scenery in Pangasinan"
         />
       </div>

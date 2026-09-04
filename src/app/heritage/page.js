@@ -1,3 +1,4 @@
+import Link from "next/link";
 export default function Heritage() {
   return (
     <main className="heritage-page">
@@ -596,30 +597,30 @@ export default function Heritage() {
 
         <nav className="heritage-nav">
 
-          <a
+          <Link
             href="/"
             className="heritage-logo"
           >
             Pangasinan Heritage
-          </a>
+          </Link>
 
           <div className="heritage-links">
 
-            <a href="/">
+            <Link href="/">
               Home
-            </a>
+            </Link>
 
-            <a href="/heritage">
+            <Link href="/heritage">
               Heritage
-            </a>
+            </Link>
 
-            <a href="/destinations">
+            <Link href="/destinations">
               Destinations
-            </a>
+            </Link>
 
-            <a href="/faces">
+            <Link href="/faces">
               Faces
-            </a>
+            </Link>
 
           </div>
 
@@ -663,7 +664,7 @@ export default function Heritage() {
         <div className="heritage-hero-image">
 
           <img
-            src="/images/heritage.jpg"
+            src="/tourist/images/heritage.jpg"
             alt="Pangasinan heritage and culture"
           />
 
@@ -686,7 +687,7 @@ export default function Heritage() {
           <div className="heritage-history-image">
 
             <img
-              src="/images/heritage.jpg"
+              src="/tourist/images/heritage.jpg"
               alt="Historical and cultural heritage of Pangasinan"
             />
 
@@ -757,7 +758,7 @@ export default function Heritage() {
 
           {/* LANGUAGE */}
 
-          <a
+          <Link
             href="/heritage/language"
             style={{
               textDecoration: "none",
@@ -784,12 +785,12 @@ export default function Heritage() {
 
             </article>
 
-          </a>
+          </Link>
 
 
           {/* FOOD */}
 
-          <a
+          <Link
             href="/heritage/localfood"
             style={{
               textDecoration: "none",
@@ -816,12 +817,12 @@ export default function Heritage() {
 
             </article>
 
-          </a>
+          </Link>
 
 
           {/* FESTIVALS */}
 
-          <a
+          <Link
             href="/heritage/festival"
             style={{
               textDecoration: "none",
@@ -848,7 +849,7 @@ export default function Heritage() {
 
             </article>
 
-          </a>
+          </Link>
 
 
         </div>
@@ -894,7 +895,7 @@ export default function Heritage() {
           <div className="heritage-festivals-image">
 
             <img
-              src="/images/festival.jpg"
+              src="/tourist/images/festival.jpg"
               alt="Cultural destination in Pangasinan"
             />
 
@@ -927,12 +928,12 @@ export default function Heritage() {
             language, crafts, and culture.
           </p>
 
-          <a
+          <Link
             href="/faces"
             className="heritage-cta-button"
           >
             Meet the People
-          </a>
+          </Link>
 
         </div>
 
@@ -959,21 +960,21 @@ export default function Heritage() {
 
           <div className="heritage-footer-links">
 
-            <a href="/">
+            <Link href="/">
               Home
-            </a>
+            </Link>
 
-            <a href="/heritage">
+            <Link href="/heritage">
               Heritage
-            </a>
+            </Link>
 
-            <a href="/destinations">
+            <Link href="/destinations">
               Destinations
-            </a>
+            </Link>
 
-            <a href="/faces">
+            <Link href="/faces">
               Faces
-            </a>
+            </Link>
 
           </div>
 
