@@ -1,0 +1,646 @@
+/* =========================
+   GLOBAL
+========================= */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: #f5f7f2;
+  color: #1f2933;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+header {
+  background: #ffffff;
+  border-bottom: 1px solid #e5e7eb;
+  padding: 20px 60px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+nav {
+  max-width: 1200px;
+  margin: 0 auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav h2 {
+  margin: 0;
+  color: #14532d;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.nav-links a {
+  color: #374151;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.nav-links a:hover {
+  color: #15803d;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+  max-width: 1280px;
+  margin: 0 auto;
+
+  padding: 80px 60px;
+
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 60px;
+
+  align-items: center;
+}
+
+.hero-content {
+  max-width: 600px;
+}
+
+.hero-label {
+  color: #15803d;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 2px;
+
+  margin: 0 0 18px;
+}
+
+.hero h1 {
+  color: #14532d;
+  font-size: 56px;
+  line-height: 1.05;
+
+  margin: 0 0 22px;
+  font-weight: 700;
+}
+
+.hero-description {
+  color: #6b7280;
+  font-size: 18px;
+  line-height: 1.8;
+
+  margin: 0 0 30px;
+}
+
+.hero-button {
+  display: inline-block;
+
+  background: #14532d;
+  color: #ffffff;
+
+  padding: 14px 24px;
+
+  border-radius: 8px;
+
+  text-decoration: none;
+
+  font-size: 15px;
+  font-weight: 700;
+
+  transition: all 0.2s ease;
+}
+
+.hero-button:hover {
+  background: #166534;
+  transform: translateY(-2px);
+}
+
+.hero-image {
+  width: 100%;
+  height: 520px;
+
+  overflow: hidden;
+
+  border-radius: 24px;
+
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+}
+
+.hero-image img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  display: block;
+}
+
+
+/* =========================
+   SECTION LABEL
+========================= */
+
+.section-label {
+  color: #15803d;
+
+  font-size: 13px;
+  font-weight: 700;
+
+  letter-spacing: 2px;
+
+  margin: 0 0 14px;
+}
+
+
+/* =========================
+   HISTORY / FACES SECTION
+========================= */
+
+.faces {
+  max-width: 1280px;
+  margin: 0 auto;
+
+  padding: 90px 60px;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  gap: 60px;
+
+  align-items: center;
+}
+
+.faces-image {
+  width: 100%;
+  height: 450px;
+
+  overflow: hidden;
+
+  border-radius: 24px;
+
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.10);
+}
+
+.faces-image img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  display: block;
+}
+
+.faces-content {
+  max-width: 600px;
+}
+
+.faces-content h2 {
+  color: #14532d;
+
+  font-size: 40px;
+  line-height: 1.15;
+
+  margin: 0 0 22px;
+}
+
+.faces-content p:not(.section-label) {
+  color: #6b7280;
+
+  font-size: 17px;
+  line-height: 1.8;
+
+  margin: 0 0 18px;
+}
+
+.faces-button {
+  display: inline-block;
+
+  margin-top: 15px;
+
+  background: #14532d;
+  color: #ffffff;
+
+  padding: 14px 24px;
+
+  border-radius: 8px;
+
+  text-decoration: none;
+
+  font-size: 15px;
+  font-weight: 700;
+
+  transition: all 0.2s ease;
+}
+
+.faces-button:hover {
+  background: #166534;
+  transform: translateY(-2px);
+}
+
+
+/* =========================
+   CULTURE / CARDS
+========================= */
+
+.destinations {
+  background: #ffffff;
+
+  padding: 90px 60px;
+
+  text-align: center;
+}
+
+.destinations > .section-label {
+  margin-bottom: 14px;
+}
+
+.destinations h2 {
+  color: #14532d;
+
+  font-size: 40px;
+
+  margin: 0 0 18px;
+}
+
+.section-description {
+  max-width: 750px;
+
+  margin: 0 auto 50px;
+
+  color: #6b7280;
+
+  font-size: 17px;
+  line-height: 1.8;
+}
+
+.cards {
+  max-width: 1200px;
+
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 25px;
+
+  text-align: left;
+}
+
+.card {
+  background: #f5f7f2;
+
+  border-radius: 16px;
+
+  padding: 32px;
+
+  min-height: 230px;
+
+  transition: transform 0.2s ease,
+              box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+}
+
+.card-content {
+  height: 100%;
+}
+
+.card-location {
+  color: #15803d;
+
+  font-size: 12px;
+  font-weight: 700;
+
+  letter-spacing: 1.5px;
+
+  margin: 0 0 14px;
+}
+
+.card h3 {
+  color: #14532d;
+
+  font-size: 23px;
+
+  margin: 0 0 14px;
+}
+
+.card p:not(.card-location) {
+  color: #6b7280;
+
+  font-size: 15px;
+  line-height: 1.7;
+
+  margin: 0;
+}
+
+
+/* =========================
+   FESTIVALS SECTION
+========================= */
+
+.faces:nth-of-type(4) {
+  background: #f5f7f2;
+}
+
+
+/* =========================
+   CTA
+========================= */
+
+.cta {
+  background: #dcfce7;
+
+  padding: 90px 30px;
+
+  text-align: center;
+}
+
+.cta .section-label {
+  margin-bottom: 14px;
+}
+
+.cta h2 {
+  color: #14532d;
+
+  font-size: 40px;
+
+  margin: 0 0 20px;
+}
+
+.cta p:not(.section-label) {
+  max-width: 750px;
+
+  margin: 0 auto 30px;
+
+  color: #4b5563;
+
+  font-size: 17px;
+  line-height: 1.8;
+}
+
+.cta-button {
+  display: inline-block;
+
+  background: #14532d;
+  color: #ffffff;
+
+  padding: 14px 24px;
+
+  border-radius: 8px;
+
+  text-decoration: none;
+
+  font-size: 15px;
+  font-weight: 700;
+
+  transition: all 0.2s ease;
+}
+
+.cta-button:hover {
+  background: #166534;
+
+  transform: translateY(-2px);
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+  background: #14532d;
+
+  color: #ffffff;
+}
+
+.footer-content {
+  max-width: 1200px;
+
+  margin: 0 auto;
+
+  padding: 60px;
+
+  text-align: center;
+}
+
+.footer-content h2 {
+  margin: 0 0 15px;
+
+  font-size: 26px;
+
+  color: #ffffff;
+}
+
+.footer-content > p {
+  margin: 0;
+
+  color: #dcfce7;
+
+  line-height: 1.6;
+}
+
+.footer-links {
+  display: flex;
+
+  justify-content: center;
+
+  gap: 25px;
+
+  flex-wrap: wrap;
+
+  margin-top: 25px;
+}
+
+.footer-links a {
+  color: #ffffff;
+
+  text-decoration: none;
+
+  font-size: 15px;
+}
+
+.footer-links a:hover {
+  color: #bbf7d0;
+}
+
+.copyright {
+  margin-top: 30px !important;
+
+  color: #bbf7d0 !important;
+
+  font-size: 14px;
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 900px) {
+
+  header {
+    padding: 20px 30px;
+  }
+
+  .hero {
+    padding: 70px 30px;
+
+    grid-template-columns: 1fr;
+
+    gap: 40px;
+  }
+
+  .hero h1 {
+    font-size: 48px;
+  }
+
+  .hero-image {
+    height: 450px;
+  }
+
+  .faces {
+    padding: 70px 30px;
+
+    grid-template-columns: 1fr;
+
+    gap: 40px;
+  }
+
+  .faces-image {
+    height: 420px;
+  }
+
+  .cards {
+    grid-template-columns: 1fr;
+  }
+
+  .destinations {
+    padding: 70px 30px;
+  }
+
+  .footer-content {
+    padding: 50px 30px;
+  }
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+
+  header {
+    padding: 18px 20px;
+  }
+
+  nav {
+    flex-direction: column;
+
+    gap: 18px;
+  }
+
+  nav h2 {
+    font-size: 21px;
+  }
+
+  .nav-links {
+    gap: 15px;
+
+    flex-wrap: wrap;
+
+    justify-content: center;
+  }
+
+  .hero {
+    padding: 55px 20px 60px;
+  }
+
+  .hero h1 {
+    font-size: 38px;
+  }
+
+  .hero-description {
+    font-size: 16px;
+  }
+
+  .hero-image {
+    height: 300px;
+
+    border-radius: 18px;
+  }
+
+  .faces {
+    padding: 65px 20px;
+  }
+
+  .faces-image {
+    height: 300px;
+
+    border-radius: 18px;
+  }
+
+  .faces-content h2 {
+    font-size: 32px;
+  }
+
+  .faces-content p:not(.section-label) {
+    font-size: 16px;
+  }
+
+  .destinations {
+    padding: 65px 20px;
+  }
+
+  .destinations h2 {
+    font-size: 32px;
+  }
+
+  .section-description {
+    font-size: 16px;
+  }
+
+  .card {
+    padding: 25px;
+  }
+
+  .cta {
+    padding: 65px 20px;
+  }
+
+  .cta h2 {
+    font-size: 32px;
+  }
+
+  .cta p:not(.section-label) {
+    font-size: 16px;
+  }
+
+  .footer-content {
+    padding: 50px 20px;
+  }
+}

@@ -1,0 +1,734 @@
+/* =========================================================
+   FACES PAGE
+========================================================= */
+
+.faces-site {
+  min-height: 100vh;
+  background: #f5f7f2;
+  color: #1f2933;
+}
+
+.faces-site *,
+.faces-site *::before,
+.faces-site *::after {
+  box-sizing: border-box;
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.faces-header {
+  width: 100%;
+  background: #ffffff;
+  border-bottom: 1px solid #e5e7eb;
+  padding: 20px 60px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.faces-nav {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.faces-logo {
+  color: #14532d;
+  font-size: 24px;
+  font-weight: 700;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.faces-logo:hover {
+  color: #166534;
+}
+
+.faces-nav-links {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.faces-nav-links a {
+  color: #374151;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.faces-nav-links a:hover {
+  color: #15803d;
+}
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.faces-hero {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 90px 60px 100px;
+}
+
+.faces-hero-grid {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.faces-label {
+  color: #15803d;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin: 0 0 18px;
+}
+
+.faces-hero h1 {
+  color: #14532d;
+  font-size: 58px;
+  line-height: 1.05;
+  margin: 0 0 24px;
+  font-weight: 700;
+}
+
+.faces-hero-description {
+  color: #6b7280;
+  font-size: 18px;
+  line-height: 1.8;
+  margin: 0 0 30px;
+  max-width: 600px;
+}
+
+
+/* =========================================================
+   GENERAL BUTTON
+========================================================= */
+
+.faces-button {
+  display: inline-block;
+  background: #14532d;
+  color: #ffffff;
+  padding: 14px 24px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 700;
+  transition:
+    background 0.2s ease,
+    transform 0.2s ease;
+}
+
+.faces-button:hover {
+  background: #166534;
+  color: #ffffff;
+  transform: translateY(-2px);
+}
+
+
+/* =========================================================
+   HERO IMAGE
+========================================================= */
+
+.faces-hero-image {
+  width: 100%;
+  height: 520px;
+  overflow: hidden;
+  border-radius: 24px;
+  background: #d1fae5;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+}
+
+.faces-hero-image img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  object-position: center;
+}
+
+
+/* =========================================================
+   INTRODUCTION
+========================================================= */
+
+.faces-intro {
+  background: #ffffff;
+  padding: 90px 30px;
+}
+
+.faces-intro-inner {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.faces-intro-inner h2 {
+  color: #14532d;
+  font-size: 40px;
+  line-height: 1.2;
+  margin: 0 0 22px;
+}
+
+.faces-intro-inner p {
+  color: #6b7280;
+  font-size: 17px;
+  line-height: 1.9;
+  margin: 0;
+}
+
+
+/* =========================================================
+   PEOPLE SECTION
+========================================================= */
+
+.people-section {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 95px 60px 110px;
+}
+
+.section-heading {
+  max-width: 850px;
+  margin: 0 auto 60px;
+  text-align: center;
+}
+
+.section-label {
+  color: #15803d;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin: 0 0 15px;
+}
+
+.section-heading h2 {
+  color: #14532d;
+  font-size: 40px;
+  line-height: 1.2;
+  margin: 0 0 18px;
+}
+
+.section-heading p {
+  color: #6b7280;
+  font-size: 17px;
+  line-height: 1.8;
+  max-width: 750px;
+  margin: 0 auto;
+}
+
+
+/* =========================================================
+   PEOPLE GRID
+========================================================= */
+
+.people-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 30px;
+}
+
+
+/* =========================================================
+   PERSON CARD
+========================================================= */
+
+.person-card {
+  display: flex;
+  flex-direction: column;
+  background: #ffffff;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.person-card:hover {
+  transform: translateY(-7px);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.13);
+}
+
+
+/* =========================================================
+   PERSON IMAGE
+========================================================= */
+
+.person-image {
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+  background: #d1fae5;
+}
+
+.person-image img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  object-position: center;
+  transition: transform 0.5s ease;
+}
+
+.person-card:hover .person-image img {
+  transform: scale(1.05);
+}
+
+
+/* =========================================================
+   PERSON CONTENT
+========================================================= */
+
+.person-content {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  flex: 1;
+}
+
+.person-category {
+  color: #15803d;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  margin: 0 0 10px;
+}
+
+.person-content h3 {
+  color: #14532d;
+  font-size: 24px;
+  line-height: 1.2;
+  margin: 0 0 14px;
+}
+
+.person-content p:not(.person-category) {
+  color: #6b7280;
+  font-size: 15px;
+  line-height: 1.75;
+  margin: 0;
+}
+
+
+/* =========================================================
+   DISCOVER STORY BUTTON
+========================================================= */
+
+.person-button {
+  display: inline-block;
+  align-self: flex-start;
+  margin-top: 20px;
+  padding: 12px 18px;
+  background: #14532d;
+  color: #ffffff;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 700;
+  transition:
+    background 0.2s ease,
+    transform 0.2s ease;
+}
+
+.person-button:hover {
+  background: #166534;
+  color: #ffffff;
+  transform: translateY(-2px);
+}
+
+
+/* =========================================================
+   COMMUNITY SECTION
+========================================================= */
+
+.community-section {
+  background: #ffffff;
+  padding: 100px 30px;
+}
+
+.community-grid {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 65px;
+  align-items: center;
+}
+
+.community-image {
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+  border-radius: 24px;
+  background: #d1fae5;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.10);
+}
+
+.community-image img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  object-position: center;
+}
+
+.community-content {
+  max-width: 560px;
+}
+
+.community-content .section-label {
+  color: #15803d;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin: 0 0 15px;
+}
+
+.community-content h2 {
+  color: #14532d;
+  font-size: 40px;
+  line-height: 1.15;
+  margin: 0 0 22px;
+}
+
+.community-content p {
+  color: #6b7280;
+  font-size: 17px;
+  line-height: 1.8;
+  margin: 0 0 18px;
+}
+
+.community-content p:last-child {
+  margin-bottom: 0;
+}
+
+
+/* =========================================================
+   CALL TO ACTION
+========================================================= */
+
+.faces-cta {
+  background: #dcfce7;
+  padding: 100px 30px;
+  text-align: center;
+}
+
+.faces-cta-inner {
+  max-width: 850px;
+  margin: 0 auto;
+}
+
+.faces-cta .section-label {
+  color: #15803d;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin: 0 0 15px;
+}
+
+.faces-cta h2 {
+  color: #14532d;
+  font-size: 42px;
+  line-height: 1.2;
+  margin: 0 0 20px;
+}
+
+.faces-cta p:not(.section-label) {
+  max-width: 700px;
+  margin: 0 auto 30px;
+  color: #4b5563;
+  font-size: 17px;
+  line-height: 1.8;
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+.faces-footer {
+  background: #14532d;
+  color: #ffffff;
+  margin: 0;
+}
+
+.faces-footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px;
+  text-align: center;
+}
+
+.faces-footer-content h2 {
+  font-size: 26px;
+  margin: 0 0 15px;
+  color: #ffffff;
+}
+
+.faces-footer-content > p {
+  color: #dcfce7;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.faces-footer-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  margin-top: 25px;
+  flex-wrap: wrap;
+}
+
+.faces-footer-links a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 15px;
+  transition: color 0.2s ease;
+}
+
+.faces-footer-links a:hover {
+  color: #bbf7d0;
+}
+
+.faces-copyright {
+  margin-top: 30px !important;
+  font-size: 14px;
+  color: #bbf7d0 !important;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 900px) {
+
+  .faces-header {
+    padding: 20px 30px;
+  }
+
+  .faces-hero {
+    padding: 70px 30px 80px;
+  }
+
+  .faces-hero-grid {
+    grid-template-columns: 1fr;
+    gap: 45px;
+  }
+
+  .faces-hero h1 {
+    font-size: 48px;
+  }
+
+  .faces-hero-image {
+    height: 450px;
+  }
+
+  .people-section {
+    padding: 75px 30px 90px;
+  }
+
+  .people-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .person-image {
+    height: 280px;
+  }
+
+  .community-section {
+    padding: 80px 30px;
+  }
+
+  .community-grid {
+    grid-template-columns: 1fr;
+    gap: 45px;
+  }
+
+  .community-content {
+    max-width: 800px;
+  }
+
+  .community-image {
+    height: 430px;
+  }
+
+  .faces-cta {
+    padding: 80px 30px;
+  }
+
+  .faces-cta h2 {
+    font-size: 36px;
+  }
+
+  .faces-footer-content {
+    padding: 50px 30px;
+  }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+  .faces-header {
+    padding: 18px 20px;
+  }
+
+  .faces-nav {
+    flex-direction: column;
+    gap: 18px;
+  }
+
+  .faces-logo {
+    font-size: 21px;
+  }
+
+  .faces-nav-links {
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .faces-nav-links a {
+    font-size: 14px;
+  }
+
+  .faces-hero {
+    padding: 55px 20px 65px;
+  }
+
+  .faces-hero-grid {
+    gap: 35px;
+  }
+
+  .faces-label {
+    font-size: 12px;
+  }
+
+  .faces-hero h1 {
+    font-size: 38px;
+  }
+
+  .faces-hero-description {
+    font-size: 16px;
+    line-height: 1.75;
+  }
+
+  .faces-hero-image {
+    height: 300px;
+    border-radius: 18px;
+  }
+
+  .faces-intro {
+    padding: 65px 20px;
+  }
+
+  .faces-intro-inner h2 {
+    font-size: 32px;
+  }
+
+  .faces-intro-inner p {
+    font-size: 16px;
+    line-height: 1.8;
+  }
+
+  .people-section {
+    padding: 65px 20px 75px;
+  }
+
+  .section-heading {
+    margin-bottom: 45px;
+  }
+
+  .section-heading h2 {
+    font-size: 32px;
+  }
+
+  .section-heading p {
+    font-size: 16px;
+  }
+
+  .people-grid {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+
+  .person-image {
+    height: 270px;
+  }
+
+  .person-content {
+    padding: 24px;
+  }
+
+  .person-content h3 {
+    font-size: 22px;
+  }
+
+  .person-content p:not(.person-category) {
+    font-size: 15px;
+  }
+
+  .person-button {
+    font-size: 14px;
+    padding: 11px 16px;
+  }
+
+  .community-section {
+    padding: 65px 20px;
+  }
+
+  .community-grid {
+    gap: 35px;
+  }
+
+  .community-image {
+    height: 300px;
+    border-radius: 18px;
+  }
+
+  .community-content h2 {
+    font-size: 32px;
+  }
+
+  .community-content p {
+    font-size: 16px;
+  }
+
+  .faces-cta {
+    padding: 70px 20px;
+  }
+
+  .faces-cta h2 {
+    font-size: 32px;
+  }
+
+  .faces-cta p:not(.section-label) {
+    font-size: 16px;
+  }
+
+  .faces-footer-content {
+    padding: 50px 20px;
+  }
+
+  .faces-footer-content h2 {
+    font-size: 24px;
+  }
+
+  .faces-footer-links {
+    gap: 18px;
+  }
+}
