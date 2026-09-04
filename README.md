@@ -1,36 +1,72 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# The Pangasinan Heritage Digital Showcase
 
-## Getting Started
+## Student Name
 
-First, run the development server:
+FREDERICK N. MANGANAAN
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Selected Framework
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Next.js
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## Live Website
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+https://atsumub-design.github.io/tourist/
 
-## Learn More
+## Project Description
 
-To learn more about Next.js, take a look at the following resources:
+The Pangasinan Heritage Digital Showcase is a responsive and
+mobile-first web application developed to promote the cultural
+heritage, tourism destinations, traditions, food, festivals, and
+local identity of Pangasinan.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+The website was developed using Next.js and Static Site Generation
+(SSG) and deployed as a static website through GitHub Pages.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Main Features
 
-## Deploy on Vercel
+- Heritage information
+- Tourism destinations
+- Local culture and traditions
+- Local food
+- Festivals and celebrations
+- Local artists and artisans
+- Community features
+- Responsive mobile-first design
+- Accessible navigation
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Technologies Used
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- Next.js
+- React
+- JavaScript
+- HTML
+- CSS
+- GitHub Pages
+
+## Deployment
+
+### GitHub Repository
+
+https://github.com/atsumub-design/tourist
+
+### Live Website
+
+https://atsumub-design.github.io/tourist/
+
+## Lighthouse Audit
+
+The deployed website was tested using Google Chrome Lighthouse.
+
+The website achieved scores of 90 or higher in:
+
+- Performance
+- Accessibility
+- Best Practices
+- SEO
+
+## Project Purpose
+
+This project was developed for Activity 2: The Pangasinan Heritage
+Digital Showcase. It demonstrates the implementation of a static,
+responsive, accessible, maintainable, and deployable web application
+using Next.js and GitHub Pages.
