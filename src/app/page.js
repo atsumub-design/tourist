@@ -19,10 +19,10 @@ export default function Home() {
           <h2>Pangasinan Heritage</h2>
 
           <div className="nav-links">
-            <a href="/">Home</a>
-            <a href="/heritage">Heritage</a>
-            <a href="/destinations">Destinations</a>
-            <a href="/faces">Faces</a>
+            <a href="/tourist/">Home</a>
+            <a href="/tourist/heritage/">Heritage</a>
+            <a href="/tourist/destinations/">Destinations</a>
+            <a href="/tourist/faces/">Faces</a>
           </div>
         </nav>
       </header>
@@ -49,7 +49,7 @@ export default function Home() {
           </p>
 
           <a
-            href="/destinations"
+            href="/tourist/destinations/"
             className="hero-button"
           >
             Explore Pangasinan
@@ -121,7 +121,7 @@ export default function Home() {
               </p>
 
               <a
-                href="/destinations/hundred-islands"
+                href="/tourist/destinations/hundred-islands/"
                 className="card-link"
               >
                 Discover More
@@ -160,7 +160,7 @@ export default function Home() {
               </p>
 
               <a
-                href="/destinations/bolinao"
+                href="/tourist/destinations/bolinao/"
                 className="card-link"
               >
                 Discover More
@@ -202,7 +202,7 @@ export default function Home() {
               </p>
 
               <a
-                href="/heritage"
+                href="/tourist/heritage/"
                 className="card-link"
               >
                 Discover More
@@ -289,7 +289,7 @@ export default function Home() {
           </p>
 
           <a
-            href="/faces"
+            href="/tourist/faces/"
             className="faces-button"
           >
             Discover Their Stories
@@ -346,19 +346,19 @@ export default function Home() {
 
           <div className="footer-links">
 
-            <a href="/">
+            <a href="/tourist/">
               Home
             </a>
 
-            <a href="/heritage">
+            <a href="/tourist/heritage/">
               Heritage
             </a>
 
-            <a href="/destinations">
+            <a href="/tourist/destinations/">
               Destinations
             </a>
 
-            <a href="/faces">
+            <a href="/tourist/faces/">
               Faces
             </a>
 
